@@ -3,86 +3,88 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-  }
-  
-  .hero {
+}
+
+.hero {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(111.4deg, rgb(22, 22, 53) 6.5%, rgb(14, 11, 84) 93.2%);
     color: white;
     position: relative;
-  }
-  
-  .container {
+}
+
+.container {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 200px; /* Reduced to 25% of original size */
-    height: 45px;  /* Reduced to 25% of original size */
-  }
-  
-  .clock {
+    width: 300px; /* Increased size */
+    height: 80px; /* Increased size */
+}
+
+.clock {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     background: rgba(235, 0, 255, 0.11);
-    border-radius: 3px;  /* Further reduced radius */
-    backdrop-filter: blur(10px);  /* Further reduced blur */
-  }
-  
-  .container::before {
+    border-radius: 8px; /* Increased radius */
+    backdrop-filter: blur(20px); /* Increased blur */
+}
+
+.container::before {
     content: '';
-    width: 45px;  /* Further reduced size */
-    height: 45px;  /* Further reduced size */
+    width: 80px; /* Increased size */
+    height: 80px; /* Increased size */
     background: #f41b75;
-    border-radius: 3px;
+    border-radius: 8px; /* Increased radius */
     position: absolute;
-    left: -13px;  /* Further reduced offset */
-    top: -13px;   /* Further reduced offset */
+    left: -20px; /* Adjusted offset */
+    top: -20px; /* Adjusted offset */
     z-index: -1;
-  }
-  
-  .container::after {
+}
+
+.container::after {
     content: '';
-    width: 45px;  /* Further reduced size */
-    height: 45px;  /* Further reduced size */
+    width: 80px; /* Increased size */
+    height: 80px; /* Increased size */
     background: #419aff;
     border-radius: 50%;
     position: absolute;
-    right: -8px;  /* Further reduced offset */
-    bottom: -13px;  /* Further reduced offset */
+    right: -15px; /* Adjusted offset */
+    bottom: -20px; /* Adjusted offset */
     z-index: -1;
-  }
-  
-  .clock span {
-    font-size: 20px;  /* Further reduced font size */
-    width: 27px;  /* Further reduced width */
+}
+
+.clock span {
+    font-size: 40px; /* Increased font size */
+    width: 55px; /* Increased width */
     display: inline-block;
     text-align: center;
     position: relative;
-  }
-  
-  .clock span::after {
-    font-size: 4px;  /* Further reduced font size */
+}
+
+.clock span::after {
+    font-size: 10px; /* Increased font size */
     position: absolute;
-    top: 21px;  /* Adjusted for smaller size */
+    top: 35px; /* Adjusted for larger size */
     bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  #hrs::after {
+}
+
+#hrs::after {
+    margin-top: 7px;
     content: 'HOURS';
-  }
-  
-  #min::after {
+}
+
+#min::after {
+    margin-top: 7px;
     content: 'MINS';
-  }
-  
-  #sec::after {
+}
+
+#sec::after {
+    margin-top: 7px;
     content: 'SEC';
-  }
-  
+}
